@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: clavier-ia-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MONGO_URL
+        value: mongodb+srv://efricadiere_db_user:gCdheCE2tqU8WzM6@cluster0.yf7ulpe.mongodb.net/clavierIA?appName=Cluster0
+      - key: DB_NAME
+        value: clavierIA
+      - key: EMERGENT_LLM_KEY
+        value: REMPLACER_PAR_TA_CLE
