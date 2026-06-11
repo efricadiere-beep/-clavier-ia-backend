@@ -3,4 +3,3 @@ uvicorn
 motor
 python-dotenv
 pydantic
-emergentintegrations --extra-index-url https://pypi.emergent.ai
