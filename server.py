@@ -23,7 +23,8 @@ from datetime import datetime, timezone
 from pydantic import BaseModel, Field
 from typing import List
 
-from emergentintegrations.llm.chat import LlmChat, UserMessage
+# Remplacement du module manquant
+import anthropic
 
 
 ROOT_DIR = Path(__file__).parent
